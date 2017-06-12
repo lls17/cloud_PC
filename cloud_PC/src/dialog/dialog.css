@@ -1,0 +1,79 @@
+.dialogBox{
+	background-color: rgba(0,0,0,.2);
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+.dialog{
+	position: absolute;
+	padding: 30px 20px;
+	border: 2px solid #55ADDC;
+	background-color: #fff;
+	border-radius: 8px;
+	font-family: "微软雅黑";
+	z-index: 4;
+}
+.dialog .i_cancel{
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	top: 10px;
+	right: 10px;
+	background: url(../../img/ico_main.png) no-repeat -39px -35px;
+}
+.dialog .dialogTip{
+  	width: 100%;
+	position: relative;
+}
+.dialogTip .dialog_ico{
+	float: left;
+	margin: 5px 10px 0 0;
+}
+.dialogTip .i_resure{
+	height: 36px;
+	width: 36px;
+	background: url(../../img/ico_main.png) no-repeat 0 -35px;
+}
+.dialogTip .dialog_title{
+	float: left;
+}
+.dialog_title .tip_title{
+	display: block;
+	line-height: 28px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.dialog_title .tip_tag{
+	display: block;
+	line-height: 28px;
+	font-size: 10px;
+	font-style: normal;
+}
+.dialog .dialogOpt{
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 26px;
+}
+.dialogOpt .error{
+	color: red;
+}
+.dialogOpt a{
+	text-decoration: none;
+	vertical-align: top;
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px;
+	border: 1px solid #55addc;
+	font-size: 16px;
+	color: #55addc;
+	word-spacing: -2px;	
+	border-radius: 2px;
+	margin-left: 10px;
+}
+.dialogOpt a:hover, .dialogOpt a:nth-child(2){
+	background-color: #55addc;
+	color: #fff;
+}

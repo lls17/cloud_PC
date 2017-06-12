@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="src/dialog/dialog.css"/>
+		<link rel="stylesheet" type="text/css" href="css/home.css"/>
+		<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/dialog/dialog.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/home.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="box">
+			<header class="head wrap">
+				<h3 class="title">
+					<a href="javascript:;" class="logo"></a>
+					<a href="javascript:;" class="name">妙味云盘</a>
+				</h3>
+				<div class="tips">
+					<div id="tips_item">
+						<i class="ico_head tips_ico"></i>
+						<span id="tips_cont"></span>
+					</div>
+					<!--<span class="item tips_error">
+						<i class="ico_head tips_ico"></i>
+						链接服务器超时，请稍后再试！
+					</span>
+					<span class="item tips_ok">
+						<i class="ico_head tips_ico"></i>
+						删除文件成功！
+					</span>
+					<span class="item tips_warming">
+						<i class="ico_head tips_ico"></i>
+						请选择文件！
+					</span>-->
+				</div>
+				<div class="self">
+					<a href="javascript:;" class="pic">
+						<img src="img/self.jpg"/>
+					</a>
+					<a href="javascript:;" class="ico_head head_ico i_more"></a>
+					<span class="breakLine"></span>
+					<a href="javascript:;" class="ico_head head_ico i_set"></a>
+				</div>
+			</header>
+			<section class="main">
+				<nav class="naver wrap">
+					<div class="nav_left">
+						<a href="javascript:;">
+							<i class="ico_head nav_ico i_download"></i>
+							下载
+						</a>
+						<a href="javascript:;">
+							<i class="ico_head nav_ico i_share"></i>
+							分享
+						</a>
+						<a href="javascript:;" id="nav_moveTo">
+							<i class="ico_head nav_ico i_move"></i>
+							移动到
+						</a>
+						<a href="javascript:;" id="nav_rename">
+							<i class="ico_head nav_ico i_rename"></i>
+							重命名
+						</a>
+						<a href="javascript:;" id="nav_del">
+							<i class="ico_head nav_ico i_del"></i>
+							删除
+						</a>
+						<a href="javascript:;" id="nav_newDir">
+							<i class="ico_head nav_ico i_newDir"></i>
+							新建文件夹
+						</a>
+						<a href="javascript:;">
+							<i class="ico_head nav_ico i_reload"></i>
+						</a>
+					</div>
+					<div class="nav_right">
+						<a href="javascript:;" id="nav_list" class="nav_list">
+							<i class="ico_head i_list"></i>
+						</a>
+						<a href="javascript:;">
+							<i class="ico_head i_block"></i>
+							<i class="ico_head i_more"></i>
+						</a>
+					</div>
+				</nav>
+				<div class="book">
+					<div class="book_left book_tree" id="book_left">
+						<!--<ul>
+							<li>
+								<h3 class="title1">
+									<i class="ico_main i_more"></i>
+									<i class="ico_main i_open"></i>
+									<a href="javascript:;">微云</a>
+								</h3>
+								<ul class="title1_list">
+									<li class="newList">
+										<h3 class="title2">
+											<i class="ico_main i_more"></i>
+											<i class="ico_main i_open"></i>
+											<a href="javascript:;">JS课程</a>
+										</h3>
+										<ul class="title2_list">
+											<li>
+												<h3 class="title3">
+													<a href="javascript:;">123</a>
+												</h3>
+											</li>
+											<li class="newList">
+												<h3 class="title3">
+													<i class="ico_main i_more"></i>
+													<i class="ico_main i_open"></i>
+													<a href="javascript:;">333</a>
+												</h3>
+												<ul class="title3_list">
+													<li>
+														<h3 class="title3">
+															<a href="javascript:;">123</a>
+														</h3>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>-->
+					</div>
+					<div class="book_right">
+						<nav class="book_nav">
+							<span class="checkAll" id="checkAll"></span>
+							<span id="nav_box">
+								<!--<a href="javascript:;">微云</a>
+								<i class="ico_main i_next"></i>
+								<a href="javascript:;">JS课程</a>
+								<i class="ico_main i_next"></i>
+								<a href="javascript:;">CSS课程</a>-->
+							</span>
+						</nav>
+						<div class="book_main" id="book_main">
+							<div id="detail_list" class="detail_list clearfix">
+							<ul class="modeList">	
+								<li class="checked" data-id="1">
+									<em class="checkSingle"></em>
+									<i class="ico_dir dir_ico i_dir"></i>
+									<span class="title">JS基础课程</span>
+								</li>
+							</ul>
+							<!--<ul class="modePic clearfix">	
+								<li class="checked" data-id="1">
+									<em class="checkSingle">√</em>
+									<i class="ico_dir dir_ico i_dir"></i>
+									<span class="title">JS基础课程</span>
+								</li>
+								<li class="hover">
+									<em class="checkSingle">√</em>
+									<i class="ico_dir dir_ico i_dir"></i>
+									<span class="title">JS基础课程</span>
+								</li>
+								<li>
+									<em class="checkSingle">√</em>
+									<i class="ico_dir dir_ico i_dir"></i>
+									<span class="title">JS基础课程</span>
+								</li>
+							</ul>-->
+							</div>
+							<div class="noDir" id="noDir">
+								<h3 class="title">暂无文件</h3>
+								<p class="tips">请点击左上角的“上传”按钮添加</p>
+							</div>
+							<!--<div class="dialog" id="dialog">
+								<a class="i_cancel" id="i_cancel" href="javascript:;"></a>
+								<div class="dialogTip">
+									<i class="i_resure"></i>
+									<strong class="tip_title" id="tip_title"></strong>
+									<em class="tip_tag" id="tip_tag"></em>
+								</div>
+								<div class="dialogOpt" id="dialogOpt">
+									<a href="javascript:;" class="cur"></a>
+									<a href="javascript:;"></a>
+								</div>
+							</div>-->
+							<div class="delIng" id="delIng">
+								<i class="ico_main i_delIng" id="delIng_pic"></i>
+								正在删除 <span id="curC">0</span>/<span id="totalC">0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

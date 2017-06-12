@@ -1,0 +1,578 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	content: "";
+	display: inline-block;
+	clear: both;
+}
+.ico_head{
+	background: url(../img/ico_head.png) no-repeat;
+}
+.ico_main{
+	background: url(../img/ico_main.png) no-repeat;
+}
+.ico_dir{
+	background: url(../img/ico_dir.png) no-repeat;
+}
+
+body{
+	padding-top: 60px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.box{
+	height: 710px;
+	width: 1200px;
+	margin: 0 auto;
+	border-radius: 12px;
+	background-color: #fff;
+}
+.wrap{
+	width: 1160px;
+	padding: 0 20px;
+}
+.head{
+	height: 70px;
+}
+.head .title{
+	float: left;
+	height: 31px;
+	padding: 18px 0 0 8px;
+}
+.title .logo{
+	float: left;
+	width: 45px;
+	height: 31px;
+	background: url(../img/logo.png) no-repeat 0 0;
+}
+.title .name{
+	float: left;
+	margin-left: 15px;
+	color: #389cd1;
+	font-weight: normal;
+	font-size: 18px;
+}
+.head .tips{
+	position: relative;
+	float: left;
+	margin: 0 0 0 190px;
+	height: 70px;
+	line-height: 70px;
+}
+.tips div{
+	display: block;
+	float: left;
+	margin-top: 0;
+	/*margin-top: 15px;*/
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	padding: 0 19px;
+	border-radius: 20px;
+	word-spacing: 2px;
+	opacity: 0;
+}
+.tips_ico{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	vertical-align: -6px;
+}
+.tips_warming{
+	display: none;
+	background-color: #f3a960;
+}
+.tips_warming .tips_ico{
+	background-position: 0 -104px;
+}
+.tips_error{
+	display: none;
+	background-color: #ef8989;
+}
+.tips_error .tips_ico{
+	background-position: 0 -80px;
+}
+.tips_ok{
+	display: none;
+	background-color: #86ce8b;
+}
+.tips_ok .tips_ico{
+	background-position: -25px -80px;
+}
+.head .self{
+	float: right;
+	padding-top: 20px;
+	height: 32px;
+}
+.self .pic{
+	float: left;
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.self .pic img{
+	height: 32px;
+}
+.head_ico{
+	height: 16px;
+	width: 16px;
+}
+.self .i_more{
+	float: left;
+	margin: 8px 0 0 7px;
+	background-position: -16px 0;
+}
+.self .breakLine{
+	float: left;
+	height: 22px;
+	width: 1px;
+	background-color: #e0e6e7;
+	margin: 5px 14px 0 13px;
+}
+.self .i_set{
+	float: left;
+	margin: 8px 20px 0 0;
+	background-position: 0 0;
+}
+/* 主体 */
+.box .main{
+	position: relative;
+}
+.main .naver{
+	height: 48px;
+	padding-top: 10px;
+	background-color: #ecf0f6;
+	border-top: 1px solid #d0d9de;
+	border-bottom: 1px solid #d0d9de;
+}
+.naver .nav_left{
+	float: left;
+}
+.naver a{
+	position: relative;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #d0d9de;
+	background-color: #fff;
+	border-radius: 4px;
+	color: #66757f;
+}
+.nav_left a{
+	margin-right: 10px;
+	font-size: 14px;
+	padding: 0 25px 0 55px;
+}
+.nav_left a:hover{
+	border-color: #55addc;
+	color: #55addc;
+}
+.nav_left a:last-child{
+	width: 36px;
+	padding: 0;
+}
+.nav_ico{
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	top: 11px;
+	left: 21px;
+}
+.i_download{
+	background-position: 0 -16px;
+}
+.nav_left a:hover .i_download, .item_opt a:hover .i_download{
+	background-position: 0 -128px;
+}
+.i_share{
+	background-position: -16px -16px;
+}
+.nav_left a:hover .i_share, .item_opt a:hover .i_share{
+	background-position: -16px -128px;
+}
+.i_move{
+	background-position: -32px -16px;
+}
+.nav_left a:hover .i_move, .item_opt a:hover .i_move{
+	background-position: -32px -128px;
+}
+.i_rename{
+	background-position: 0 -32px;
+}
+.nav_left a:hover .i_rename, .item_opt a:hover .i_rename{
+	background-position: 0 -144px;
+}
+.i_del{
+	background-position: -16px -32px;
+}
+.nav_left a:hover .i_del, .item_opt a:hover .i_del{
+	background-position: -16px -144px;
+}
+.i_newDir{
+	background-position: -32px -32px;
+}
+.nav_left a:hover .i_newDir{
+	background-position: -32px -144px;
+}
+.i_reload{
+	top: 11px;
+	left: 10px;
+	background-position: 0px -48px;
+}
+.nav_left a:hover .i_reload{
+	background-position: 0px -160px;
+}
+.i_list{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background-position: -16px -48px;
+}
+.nav_list:hover .i_list, .nav_right a.checked .i_list{
+	background-position: -16px -160px;
+}
+.nav_list:hover, .nav_right a.checked{
+	border-color: #55addc;
+	background-color: #55addc;
+}
+.i_block{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background-position: -32px -48px;
+}
+.nav_right .i_more{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background-position: 0px -64px;
+}
+.naver .nav_right{
+	float: right;
+}
+.nav_right a{
+	padding: 0 10px;
+	margin-left: 10px;
+}
+.main .book{
+	height: 580px;
+}
+.book_left{
+	float: left;
+	width: 238px;
+	padding-top: 10px;
+	height: 570px;
+	border-right: 2px solid #e1e8ed;
+}
+.book_tree ul{
+	display: none;
+}
+.book_tree>ul{
+	display: block;
+}
+.book_tree a{
+	color: #66757f;
+}
+.book_tree li{
+	line-height: 30px;
+}
+.book_tree h3:hover{
+	cursor: pointer;
+	background-color: #f0f3f6;
+}
+.book_tree h3.selected{
+	background-color: #e1e8ed;
+}
+.book_tree h3{
+	position: relative;
+	font-weight: normal;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	word-spacing: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 10px;
+}
+.book_tree .i_showMore{
+	position: absolute;
+	top: 10px;
+	height: 7px;
+	width: 10px;
+}
+.book_tree .i_hasMore{
+	position: absolute;
+	top: 10px;
+	height: 10px;
+	width: 10px;
+	background-position: -48px 0;
+}
+.i_openBook{
+	display: inline-block;
+	height: 15px;
+	width: 16px;
+	background-position: -12px 0;
+	vertical-align: -2px;
+}
+.i_closeBook{
+	display: inline-block;
+	height: 15px;
+	width: 16px;
+	background-position: -30px 0;
+	vertical-align: -2px;
+}
+.book_right{
+	float: left;
+	width: 960px;
+	height: 580px;
+}
+.book_nav{
+	font-size: 14px;
+	height: 48px;
+	line-height: 48px;
+	border-bottom: 2px solid #e1e8ed;
+}
+.book_nav .checkAll{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	border: 1px solid #d0d9de;
+	border-radius: 2px;
+	margin: 0 16px;
+	vertical-align: -4px;
+}
+.book_nav .checkedAll{
+	border-color: #55addc;
+	background: #55addc url(../img/ico_main.png) no-repeat -12px -16px;
+}
+.book_nav a{
+	display: inline-block;
+	height: 100%;
+	padding: 0 6px;
+	color: #2f2f2f;
+}
+.book_nav a:hover{
+	color: #5fb2de;
+	border-bottom: 2px solid #55addc;
+}
+.book_nav .i_next{
+	display: inline-block;
+	height: 20px;
+	width: 14px;
+	background-position: 0 -15px;
+	vertical-align: -4px;
+}
+.book_right .book_main{
+	position: relative;
+	height: 530px;
+	background-color: #f5f8fa;
+}
+.book_main .noDir{
+	display: none;
+	padding-top: 274px;
+	height: 306px;
+	background: url(../img/logo1.png) no-repeat center 122px;
+	color: #6e7d86;
+}
+.noDir .title{
+	font-size: 22px;
+	line-height: 34px;
+	font-weight: normal;
+	text-align: center;
+}
+.noDir .tips{
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+}
+.book_right .detail_list{
+	width: 100%;
+	max-height: 530px;
+	overflow: hidden;
+}
+.detail_list ul{
+	width: 100%;
+	max-height: 530px;
+	overflow: auto;
+}
+/*-------列表模式--------*/
+.detail_list .modeList li{
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid #e1e8ed;
+	font-size: 14px;
+	line-height: 50px;
+	color: #66757f;
+}
+.modeList .item_info{
+	float: left;
+	width: 360px;
+	padding-right: 4px;
+}
+.modeList .item_opt{
+	float: left;
+}
+.modeList .item_opt a{
+	position: relative;
+	margin-right: 20px;
+}
+.opt_ico{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	vertical-align: -4px;
+}
+.modeList li .checkSingle{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	border: 1px solid #d0d9de;
+	border-radius: 2px;
+	margin: 0 16px;
+	vertical-align: -4px;
+}
+.modeList .dir_ico{
+	display: inline-block;
+	height: 21px;
+	width: 24px;
+	vertical-align: -4px;
+	margin-right: 10px;
+}
+.modeList .i_file{
+	background-position: -39px -71px;
+}
+/*-------大图标模式--------*/
+.detail_list .modePic li{
+	position: relative;
+	float: left;
+	height: 178px;
+	width: 178px;
+	margin: 40px 0 0 40px;
+	border: 1px solid #ebeff0;
+	border-radius: 4px;
+	text-align: center;
+	background-color: #ebeff0;
+	cursor: pointer;
+}
+.modePic li .checkSingle{
+	position: absolute;
+	display: none;
+	top: 9px;
+	left: 9px;
+	height: 16px;
+	width: 16px;
+	border: 1px solid #55addc;
+	line-height: 16px;
+	background-color: #55addc;
+	border-radius: 2px;
+}
+.modePic li .title{
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+	color: #6e7c86;
+	width: 118px;
+	margin: 0 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.modePic li input{
+	width: 110px;
+	padding: 0 4px;
+	margin: 0 30px;
+	font-size: 14px;
+	line-height: 30px;
+	border: 1px solid #55addc;
+}
+.modePic li.checked{
+	border-color: #55addc;
+	background-color: #fff;
+	box-shadow: 0 0 2px #55addc;
+}
+.modePic li.checked .checkSingle{
+	display: block;
+	background: #55addc url(../img/ico_main.png) no-repeat -12px -16px;
+}
+.modePic li.checked .title{
+	color: #55addc;
+}
+.modePic li.hover{
+	background-color: #fff;
+	border-color: #fff;
+}
+.modePic li.hover .title{
+	color: #55addc;
+}
+.modePic li.hover .checkSingle{
+	opacity: .5;
+	display: block;
+	background: #55addc url(../img/ico_main.png) no-repeat -12px -16px;
+}
+.modePic .dir_ico{
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	margin-top: 30px;
+}
+.i_file{
+	background-position: 0 0;
+}
+.i_zip{
+	background-position: 0 -83px;
+}
+.i_txt{
+	background-position: -86px 0;
+}
+.delIng{
+	display: none;
+	height: 76px;
+	line-height: 76px;
+	padding: 0 34px 0 86px;
+	border: 2px solid #55ADDC;
+	background-color: #fff;
+	border-radius: 8px;
+	position: absolute;
+	left: 30%;
+	top: 60%;
+	font-size: 16px;
+}
+.i_delIng{
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	top: 20px;
+	left: 28px;
+	background-position: 0 -71px;
+}
+.book_main .selBox{
+	position: absolute;
+	border: 1px solid #3399ff;
+	background-color: #55ADDC;
+	opacity: .3;
+}
+/*--------移动到------------*/
+.book_move{
+	width: 356px;
+	height: 234px;
+	overflow: auto;
+	border: 1px solid #e1e8ed;
+	margin-top: 10px;
+}
+/*-------拖拽-------------*/
+.dragBox{
+	position: absolute;
+	height: 21px;
+	font: 10px/26px "微软雅黑";
+	text-align: center;
+	color: #fff;
+	width: 24px;
+	background: url(../img/ico_main.png) no-repeat -39px -71px;
+}

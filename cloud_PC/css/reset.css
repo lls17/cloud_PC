@@ -1,0 +1,17 @@
+body, h3, h4, p, input, div{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	vertical-align: top;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
